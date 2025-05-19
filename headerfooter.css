@@ -1,0 +1,16 @@
+header{
+   
+    top:0;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #FCB9B5;
+    position: sticky; /*headeren er sticky*/
+    width: 100%;
+    top: 0; /*ikke noget whitespace mellem header og toppen af siden*/
+    padding-left: 70px;
+    padding-right: 70px;
+    height: 3%;
+    z-index: 10; 
+}

@@ -5,4 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="headerfooter.css">
     <link rel="stylesheet" href="styles.css">     
-    <title>HavBlink</title>
+    <title>HavBlink</title> 
+</head> 
+
+
+<body>
+ 
+
+    <header>
+        <a href="index.html"><img src="images/logo-g2.png" alt="logo"></a>
+
+        <nav id="laptopnav">
+            <a href="#">Om Godsbanen</a>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Værksteder</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Kurser</a></li>
+                            <li><a href="keramik.html">Keramik</a></li>
+                            <li><a href="#">Grafik/Print</a></li>
+                            <li><a href="#">Storprint</a></li>
+                            <li><a href="#">Laser/shaper</a></li>
+                            <li><a href="#">Metal</a></li>
+                            <li><a href="#">Smykker</a></li>
+                            <li><a href="#">Tekstil</a></li>
+                            <li><a href="#">Træ</a></li>
+                            <li><a href="#">Information</a></li>
+                        </ul>
+                </li>
+            </ul>
+
+
+            <a href="#">Lej Lokaler</a>
+            <a href="#">Gods&reg;</a>
+            <a href="kalender.html">Kalender</a>
+
+        </nav>
+         <!-- Skjult checkbox til toggle af menuen -->
+    <input type="checkbox" id="menu-toggle" hidden>
+    <label for="menu-toggle">
+        <img id="burger" src="images/burger.svg" alt="burger">
+    </label>
+    <nav id="mobile-nav">
+        <ul>
+            <li><a href="#">Om Godsbanen</a></li>
+            <li>
+                <!--Skjult checkbox til toggle af dropdown-->
+                <input type="checkbox" id="værksteder-toggle" hidden>
+                <label for="værksteder-toggle">Værksteder</label>
+                    <ul class="værksteder-dropdown">
+                        <li><a href="#">Kurser</a></li>
+                        <li><a href="keramik.html">Keramik</a></li>
+                        <li><a href="#">Grafik/Print</a></li>
+                        <li><a href="#">Storprint</a></li>
+                        <li><a href="#">Laser/shaper</a></li>
+                        <li><a href="#">Metal</a></li>
+                        <li><a href="#">Smykker</a></li>
+                        <li><a href="#">Tekstil</a></li>
+                        <li><a href="#">Træ</a></li>
+                        <li><a href="#">Information</a></li>
+                    </ul>
+            </li>
+            <li><a href="#">Lej Lokaler</a></li>
+            <li><a href="#">Gods&reg;</a></li>
+            <li><a href="kalender.html">Kalender</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+    
+</body>
