@@ -1,16 +1,125 @@
 header{
    
     top:0;
-    width: 100%;
     display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    background-color: #FCB9B5;
-    position: sticky; /*headeren er sticky*/
+    position: relative; 
     width: 100%;
     top: 0; /*ikke noget whitespace mellem header og toppen af siden*/
-    padding-left: 70px;
-    padding-right: 70px;
-    height: 3%;
     z-index: 10; 
+    height: 10%;
+   
+}
+
+header img { 
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+
+#header-text { 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header-text h1 {
+    margin-left: 60px;
+    margin-top: 10px;
+    font-size: 4rem;
+    color: #1a3b55;
+    font-family: 'librebaskerville', serif;
+    font-weight: 50;
+    font-style: normal;
+
+
+}
+#header-text h3 {
+    margin-right: 60px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #1a3b55;
+    font-family: 'librebaskerville', serif;
+    font-weight: 50;
+    font-style: normal;
+}
+
+#menuer {
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    margin-left: 2%;
+    position: absolute;
+    width: 100%;
+
+}  
+
+#menuer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    line-height: 5rem;
+    border-bottom: 1px solid #ffffff;
+    width: 35%;
+    height: 60px;
+} 
+
+
+footer {
+    display: flex;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    height: 20rem;
+
+}
+
+#footerimg { 
+    width: 100%;
+    position: absolute;
+    bottom: 0.5rem; /*bottom rykker placering af footer billedet*/
+    
+}
+
+#footer-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #1a3b55;
+    height: 100%; /*Højden på footer-text er 100% af footer*/
+    padding: 4rem;
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+}
+
+#footer-text section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: flex-start;
+    line-height: 2rem;
+
+}
+
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#tilmeld {
+    width: 19.5rem;
+
+}
+
+#video { 
+    margin-top: 11%;
+    position: relative;
+    
 }

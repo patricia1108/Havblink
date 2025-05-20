@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="headerfooter.css">
-    <link rel="stylesheet" href="styles.css">     
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="layout.css">    
     <title>HavBlink</title> 
 </head> 
 
@@ -13,68 +14,70 @@
  
 
     <header>
-        <a href="index.html"><img src="images/logo-g2.png" alt="logo"></a>
+       <img src="image/header3.png" alt="header">
+       <div id="header-text"> 
+            <h1>HAVBLINK</h1>
+            <h3>KONTAKT</h3>
+       </div> 
 
-        <nav id="laptopnav">
-            <a href="#">Om Godsbanen</a>
-            <ul>
-                <li class="dropdown">
-                    <a href="#">Værksteder</a>
-                        <ul class="dropdown-content">
-                            <li><a href="#">Kurser</a></li>
-                            <li><a href="keramik.html">Keramik</a></li>
-                            <li><a href="#">Grafik/Print</a></li>
-                            <li><a href="#">Storprint</a></li>
-                            <li><a href="#">Laser/shaper</a></li>
-                            <li><a href="#">Metal</a></li>
-                            <li><a href="#">Smykker</a></li>
-                            <li><a href="#">Tekstil</a></li>
-                            <li><a href="#">Træ</a></li>
-                            <li><a href="#">Information</a></li>
-                        </ul>
-                </li>
-            </ul>
+    </header>
 
 
-            <a href="#">Lej Lokaler</a>
-            <a href="#">Gods&reg;</a>
-            <a href="kalender.html">Kalender</a>
 
+
+    <main> 
+        <div id="video">
+        <video width="100%" height="auto" autoplay muted loop playsinline>
+            <source src="videos/havblinkvideo2.mp4" type="video/mp4">
+        </video>
+        <nav id="menuer"> 
+            <a href="#">VORES VINE</a>
+            <a href="#">OM OS</a>
+            <a href="#">OPLEV</a>
+            <a href="#">SHOP</a>
+            <a href="#">ANMELDELSER</a>
         </nav>
-         <!-- Skjult checkbox til toggle af menuen -->
-    <input type="checkbox" id="menu-toggle" hidden>
-    <label for="menu-toggle">
-        <img id="burger" src="images/burger.svg" alt="burger">
-    </label>
-    <nav id="mobile-nav">
-        <ul>
-            <li><a href="#">Om Godsbanen</a></li>
-            <li>
-                <!--Skjult checkbox til toggle af dropdown-->
-                <input type="checkbox" id="værksteder-toggle" hidden>
-                <label for="værksteder-toggle">Værksteder</label>
-                    <ul class="værksteder-dropdown">
-                        <li><a href="#">Kurser</a></li>
-                        <li><a href="keramik.html">Keramik</a></li>
-                        <li><a href="#">Grafik/Print</a></li>
-                        <li><a href="#">Storprint</a></li>
-                        <li><a href="#">Laser/shaper</a></li>
-                        <li><a href="#">Metal</a></li>
-                        <li><a href="#">Smykker</a></li>
-                        <li><a href="#">Tekstil</a></li>
-                        <li><a href="#">Træ</a></li>
-                        <li><a href="#">Information</a></li>
-                    </ul>
-            </li>
-            <li><a href="#">Lej Lokaler</a></li>
-            <li><a href="#">Gods&reg;</a></li>
-            <li><a href="kalender.html">Kalender</a></li>
-        </ul>
-    </nav>
-</header>
+        </div>
+        <!--id er det enklete element, class er for alle de elementer som skal kunne det samme-->
+    
+    </main>
 
+    <footer>
+       
+        <div id="footer-text"> 
+            <!--section er en kasse i footeren-->
+            <section>
+                <h3>Tilmeld dig vores nyhedsbrev</h3>
+                <p>Bliv inviteret til vores filmaftner og andre events.</p>
+                <br>
+                <p>Tilmeld dig her</p>
+                <img src="image/tilmeld.png" id="tilmeld" alt="tilmeld">
+            </section>    
 
+            <section>
+                <h3>Kontakt</h3>
+                <p>HavBlink Hvidvin</p>
+                <p>Kontakt@havblink.dk</p>
+                <p>+45 90 90 55 55</p>
+            </section>
 
+            <section>
+                <h3>Følg os</h3>
+                <div id="social-media">
+                    <img src="image/instagram.png" alt="instagram">
+                    <img src="image/facebook.png" alt="facebook">
+                    <img src="image/pinterest.png" alt="pinterest">
 
+                </div>
+            </section>
+
+         
+
+        </div>
+        <img src="image/footer3.png" id="footerimg" alt="footer">
+
+    </footer>
     
 </body>
+
+</html>
