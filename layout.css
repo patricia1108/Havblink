@@ -13,13 +13,54 @@
     
 }
 
+#kontakt-menu-container { 
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+
+
 
 #kontakt-menu {
-    color: #000000;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    line-height: 6rem;
+  width: 100%;
+  display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-direction: row; 
+
+}
+
+
+#kontakt-menu-item { /*selve navn og efternavn*/
+    width: 30%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30%; 
+    line-height: 2rem; 
+    margin-bottom: 20rem;
+    margin-top: 20rem;
+    
+}
+
+
+#kontakt-menu-item1 { /*email og telefon*/
+    width: 30%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 30%;  
+    line-height: 2rem;
+ 
+}
+
+#kontakt-menu-item p, #kontakt-menu-item1 p { /*kommentar*/
+    width: 80%;
     border-bottom: 1px solid #000000;
-    width: 35%;
-    height: 60px; /*gør at linjen ligger lige under teksten*/
+    line-height: 2rem;
 }
