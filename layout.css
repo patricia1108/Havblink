@@ -133,3 +133,44 @@ ___________________________________________________________________________
     font-style: light;
 
 }
+
+
+.billeder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  .vinkort-container {
+    margin-top: 10%; /* eller 60px eller mere – prøv dig frem */
+  }
+  
+
+  .vin-kort {
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .vin-kort img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .vin-kort p {
+    background-color: #BC5732;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-weight: 100;
+    font-size: 17px; 
+    font-family: 'libre-baskerville', serif;
+  }
+  
+
+
