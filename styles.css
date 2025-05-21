@@ -14,9 +14,15 @@ body {
     src: url(fonts/LibreBaskerville-Regular.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'opensans-normal';
+    src: url(fonts/OpenSans-Regular.ttf) format('truetype');
+}
 
-
-
+@font-face {
+    font-family: 'opensans-light';
+    src: url(fonts/OpenSans-Light.ttf) format('truetype');
+}
 
 
 

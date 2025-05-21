@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="headerfooter.css">
     <link rel="stylesheet" href="styles.css"> 
     <link rel="stylesheet" href="layout.css">    
-    <title>HavBlink</title> 
+    <title>Kontakt</title> 
 </head> 
 
 
@@ -16,33 +16,80 @@
     <header>
        <img src="image/header3.png" alt="header">
        <div id="header-text"> 
-            <h1>HAVBLINK</h1>
+            <h1><a href="index.html" class="header-link">HAVBLINK</h1></a>
             <h3>KONTAKT</h3>
        </div> 
 
     </header>
 
     <main> 
+        <a href="index.html" class="tilbage-pil">
+            <img src="image/tilbagepil.png" alt="Tilbage">
+          </a>
+          
+
         <h1 id="kontakt">KONTAKT</h1>
         <div id="kontakt-menu-container"> 
+
             <div id="kontakt-menu">
                 <div id="kontakt-menu-item">
-                     <p>NAVN</p>
-                     <p>EFTERNAVN</p>
+                    <input type="text" name="navn" placeholder="NAVN">
+                    <input type="text" name="efternavn" placeholder="EFTERNAVN">
+                    </div>
+                      
                 </div>
+
                 <div id="kontakt-menu-item1">
-                    <p>EMAIL</p>
-                    <p>TLF NR</p>
+                    <input type="email" name="email" placeholder="EMAIL">
+                    <input type="tel" name="tlf" placeholder="TLF NR">
                 </div>
+
             </div>
             <div id="kontakt-menu-item2">
-                <p>KOMMENTAR</p>
+                <textarea name="kommentar" placeholder="KOMMENTAR"></textarea>
             </div>
         </div>
         
+        <button class="kontakt-menu-knap">SEND</button>
+            
         
 
         
     </main>
 
+    <footer>
+       
+        <div id="footer-text"> 
+            <!--section er en kasse i footeren-->
+            <section>
+                <h3>Tilmeld dig vores nyhedsbrev</h3>
+                <p>Bliv inviteret til vores filmaftner og andre events.</p>
+                <br>
+                <p>Tilmeld dig her</p>
+                <img src="image/tilmeld.png" id="tilmeld" alt="tilmeld">
+            </section>    
+
+            <section>
+                <h3>Kontakt</h3>
+                <p>HavBlink Hvidvin</p>
+                <p>Kontakt@havblink.dk</p>
+                <p>+45 90 90 55 55</p>
+            </section>
+
+            <section>
+                <h3>Følg os</h3>
+                <div id="social-media">
+                    <img src="image/instagram.png" alt="instagram">
+                    <img src="image/facebook.png" alt="facebook">
+                    <img src="image/pinterest.png" alt="pinterest">
+
+                </div>
+            </section>
+
+         
+
+        </div>
+        <img src="image/footer3.png" id="footerimg" alt="footer">
+
+    </footer>
 </body>
