@@ -1,20 +1,18 @@
 /* kontakt.html */
-___________________________________________________________________________
 
-#kontakt { 
-    font-size: 15rem;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    display: flex;
+#h1-tekst {
+    font-size: 15rem; /* Juster størrelsen som ønsket */
+    color: #1a3b55; /* Juster farven som ønsket */
     text-align: center;
-    margin-top: 35rem;
-    color: #1a3b55;
     font-family: 'librebaskerville', serif;
-    font-weight: 100px;
-    font-style: normal;
+    font-weight: 400;
+    margin-top: 40rem;
+    margin-bottom: 3rem;
     
-}
+  }
+  
+    
+
 
 #kontakt-menu-container { 
     width: 100%;
@@ -22,7 +20,7 @@ ___________________________________________________________________________
     justify-content: center;
     align-items: center; 
     flex-direction: column;
-    margin-top: 15%;
+    margin-top: 10rem;
 }
 
 
@@ -138,7 +136,7 @@ ___________________________________________________________________________
 .billeder {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 30px;
     padding: 40px;
   }
@@ -173,4 +171,36 @@ ___________________________________________________________________________
   }
   
 
+.druetekst-og-knap {
+    display: flex;
+    justify-content: flex-end; /* højrestillet - flex-start er stillet mod venstre*/
+    align-items: center;
+    gap: 20px; /* luft mellem tekst og knap */
+    margin-right: 6.5%; /* justér mod højre */
+    margin-top: 1px; /* op/ned */
+    margin-bottom: 60px;
+  }
+  
+  .druetekst {
+    font-size: 16px;
+    color: #1a3b55; 
+    font-family: 'opensans-normal', sans-serif;
+    font-weight: 100;
+  }
+  
+  .druesorter-knap {
+    background-color: #BC5732;
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s ease;
+    font-weight: 300;
+  
 
+  }
+  
+ 
