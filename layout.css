@@ -160,6 +160,9 @@
     display: block;
   }
   
+ 
+
+
   .vin-kort p {
     background-color: #BC5732;
     color: white;
@@ -170,6 +173,11 @@
     font-family: 'libre-baskerville', serif;
   }
   
+  .vin-kort:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
+  }
 
 .druetekst-og-knap {
     display: flex;
@@ -199,8 +207,14 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: background-color 0.2s ease;
     font-weight: 300;
+  }
+
+    .druesorter-knap:hover { 
+        background-color: #A94B2A; /* mørkere rødbrun farve ved hover */
+        color: #ffffff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* dybere skygge ved hover */
+    }
   
 
-  }
-  
+
  

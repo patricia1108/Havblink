@@ -79,8 +79,15 @@ footer {
 #footerimg { 
     width: 100%;
     position: absolute;
-    bottom: 0.5rem; /*bottom rykker placering af footer billedet*/
+    bottom: 1rem; /*bottom rykker placering af footer billedet*/
     
+}
+
+#footer-img {
+    width: 100%;
+    position: absolute;
+    bottom: 1rem; /*bottom rykker placering af footer billedet*/
+    top: 12rem;
 }
 
 #footer-text {
@@ -92,6 +99,18 @@ footer {
     height: 100%; /*Højden på footer-text er 100% af footer*/
     padding: 4rem;
     margin-top: 15rem;
+    margin-bottom: 2rem;
+}
+
+#footer-text1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #1a3b55;
+    height: 100%; /*Højden på footer-text er 100% af footer*/
+    padding: 4rem;
+    margin-top: 41rem;
     margin-bottom: 2rem;
 }
 
