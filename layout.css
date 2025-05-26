@@ -425,3 +425,260 @@
     font-weight: 100;
     font-family: 'opensans-normal', sans-serif;
 }
+
+/*druesorter.html*/
+#druesorter-h2 {
+    font-size: 11rem;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin-top: 35rem;
+    color: #1a3b55;
+    font-family: 'librebaskerville', serif;
+    font-weight: 700;
+    
+    
+}
+
+#drue-sorter { 
+    display: block;
+    width: 80%;
+    display: flex;
+    margin-top: 30rem;
+    margin-left: 9rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.druer-section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .intro-text {
+    max-width: 1400px;
+    margin: 0 auto 4rem auto;
+    font-size: 1.4rem;
+    color: #2b3b45;
+    font-weight: 100;
+    font-family: 'opensans-normal', sans-serif;
+    line-height: 55px;
+    text-align: left;
+  }
+  
+ 
+  .druer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #d8b76d;
+    padding: 4rem;
+    border-radius: 10px;
+    gap: 1rem;
+  }
+  
+  .drue-box {
+    width: 350px;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    line-height: 35px; 
+  }
+
+ 
+  
+  .drue-box img {
+    width: 100px;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+
+  
+  .johanit-drue {
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.3rem;
+  }
+
+  .solaris-drue {
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.3rem;
+  }
+  
+  .muscaris-drue {
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.3rem;
+  }
+
+  .johanit-tekst {
+    width: 350px;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    line-height: 35px;
+    text-align: left;
+  }
+
+    .solaris-tekst {
+        width: 350px;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+        position: relative;
+        line-height: 35px;
+        text-align: left;
+    }
+
+    .muscaris-tekst {
+        width: 350px;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+        position: relative;
+        line-height: 35px;
+        text-align: left;
+    }
+
+/*om-os.html*/
+
+#om-os-h3 {
+    font-size: 4rem;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin-top: 35rem;
+    color: #1a3b55;
+    font-family: 'librebaskerville', serif;
+    font-weight: 100;
+    
+    
+}
+
+  /* 1) To kolonner: venstre (team) og højre (about) */
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;                 /* afstand mellem kolonner */
+    padding: 2rem;
+    font-family: serif;
+  }
+  
+  /* 2) Team-sektionen */
+  .team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 4rem;            /* lodret / vandret gap */
+  }
+  .team-kort {
+    text-align: left;
+  }
+  .team-kort img {
+    width: 100%;
+    max-width: 220px;          /* eller lige så bred som du ønsker */
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .team-kort h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+  }
+  .team-kort p {
+    margin: 0;
+    line-height: 1.6;
+    color: #1f3b4d;
+    font-family: 'opensans-normal', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+  }
+
+  #vores-team-h2 { 
+    color: #1f3b4d;
+    font-family: 'librebaskerville', serif;
+    font-weight: 100;
+    margin-bottom: 5rem;
+    margin-top: 0%;
+
+  }
+
+  .team-navn { 
+    font-family: 'opensans-bold', sans-serif;
+    color: #1f3b4d;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* 3) About-sektionen med lodret separator */
+  .om-section {
+    border-left: 1px solid #333;
+    padding-left: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    margin-top: 3rem;
+  }
+  
+  /* 4) Overskrifter + vandret streg */
+  .om-kasse h2 {
+    position: relative;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.25rem;
+  }
+  .om-kasse h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #333;
+  }
+  .om-kasse p {
+    margin: 0.75rem 0 0;
+    line-height: 1.7;
+    color: #1f3b4d;
+    font-family: 'opensans-normal', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+
+  }
+
+  .kasse-navn { 
+    font-family: 'librebaskerville', serif;
+    font-weight: 100;
+    color: #1f3b4d;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #om-os-billede { 
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+}
