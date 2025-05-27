@@ -506,18 +506,21 @@
     font-weight: bold;
     color: #000000;
     font-size: 1.3rem;
+    font-family: 'opensans-bold', sans-serif;
   }
 
   .solaris-drue {
     font-weight: bold;
     color: #000000;
     font-size: 1.3rem;
+    font-family: 'opensans-bold', sans-serif;
   }
   
   .muscaris-drue {
     font-weight: bold;
     color: #000000;
     font-size: 1.3rem;
+    font-family: 'opensans-bold', sans-serif;
   }
 
   .johanit-tekst {
@@ -528,6 +531,7 @@
     position: relative;
     line-height: 35px;
     text-align: left;
+    font-family: 'opensans-normal', sans-serif;
   }
 
     .solaris-tekst {
@@ -538,6 +542,7 @@
         position: relative;
         line-height: 35px;
         text-align: left;
+        font-family: 'opensans-normal', sans-serif;
     }
 
     .muscaris-tekst {
@@ -548,6 +553,7 @@
         position: relative;
         line-height: 35px;
         text-align: left;
+        font-family: 'opensans-normal', sans-serif;
     }
 
 /*om-os.html*/
@@ -567,7 +573,7 @@
     
 }
 
-  /* 1) To kolonner: venstre (team) og højre (about) */
+  /* 1) To kolonner: venstre (team) og højre (om) */
 .page-wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -591,7 +597,7 @@
   }
   .team-kort img {
     width: 100%;
-    max-width: 220px;          /* eller lige så bred som du ønsker */
+    max-width: 220px;          
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 0.75rem;
@@ -630,7 +636,7 @@
     margin-bottom: 0.5rem;
   }
   
-  /* 3) About-sektionen med lodret separator */
+  /* 3) om-sektionen med lodret separator */
   .om-section {
     border-left: 1px solid #333;
     padding-left: 2.5rem;
@@ -682,3 +688,201 @@
     margin-top: 5rem;
     margin-left: 2.5rem;
 }
+
+/* Selve “grid”-sektionen */
+.historie-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;  /* 1/3 til billede, 2/3 til tekst */
+    gap: 4rem;                     
+    align-items: start;             
+    margin-top: 15rem;              
+    padding: 0 2rem;               
+  }
+
+  
+  
+  .historie-image img {
+    width: 100%;
+    border-radius: 1rem;    /* samme bløde hjørner som andre billeder */
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 3rem;
+  }
+  
+  /* Tekst-kolonne */
+  .historie-text h2 {
+    position: relative;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.25rem;
+  }
+  
+  /* Understregning under overskriften */
+  .historie-text h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #333;
+  }
+  
+  /* Afsnits-styling */
+  .historie-text p {
+    margin: 1rem 0 0;
+    line-height: 1.9;
+    font-size: 1.7rem;
+    font-family: 'opensans-normal', sans-serif;
+    color: #1f3b4d;
+    font-weight: 100;
+  }
+
+  .billede-section-h2 { 
+    font-size: 2.5rem;
+    color: #1f3b4d;
+    font-family: 'librebaskerville', serif;
+    font-weight: 100;
+    margin-bottom: 2rem;
+  }
+
+/* oplev.html */ 
+
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  /* Alle kort har afrundede hjørner og skjuler overflow */
+  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+  
+
+#oplev-h3 { 
+    font-size: 4rem;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin-top: 35rem;
+    color: #1a3b55;
+    font-family: 'librebaskerville', serif;
+    font-weight: 100;
+    margin-bottom: 10rem;
+    
+    
+}
+
+
+  
+  /* Narrow kort (portræt) */
+  .card--narrow {
+    aspect-ratio: 3 / 4;
+  }
+  
+  /* Billede fylder altid hele kortet */
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+  }
+  
+  /* Overlay-teksten centreret ovenpå */
+  .card__overlay {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    text-align: center;
+
+    
+  }
+  .card__overlay h3,
+  .card__overlay h4 {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-family: 'opensans-bold', sans-serif;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  
+  .card a {      
+   text-decoration: none; 
+      
+  }
+  
+ /* anmeldelser.html */ 
+
+/* Wrapper, så der kan placeres ting over billedet */
+.kommentar-container {
+    position: relative;
+    width: 350px;    /* bredde */
+    height: 220px;   /* højde */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Selve billedet (taleboblen) */
+  .kommentar-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  /* Teksten ovenpå: */
+  .kommentar-tekst {
+    position: absolute;
+    top: 3rem;      /* afstand fra toppen af boksen */
+    left: 1rem;     /* afstand fra venstre kant */
+    right: 1rem;    /* så den kan brydes i højre side */
+    bottom: 0rem;   /* undgå at løbe ud under halen */
+    overflow: auto; /* rullefelt hvis teksten bliver for lang */
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #333;
+  }
+  
+  /* info-række med avatar + navn */
+  .kommentar-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: -2rem;
+  }
+  
+  /* Den runde avatar */
+  .kommentar-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #f9f2e9;
+    margin-bottom: 5rem;
+  }
+  
+  /* Navnet */
+  .kommentar-forfatter {
+    font: 700 1rem serif;
+    text-transform: uppercase;
+    color: #1f3b4d;
+  }
+  
+  .kommentar-kort {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* <— her centrerer vi avatar+navn */
+    gap: 0.5rem;           /* luft mellem boble og meta */
+  }
+  
