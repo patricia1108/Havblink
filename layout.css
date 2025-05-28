@@ -1,8 +1,19 @@
+/*index.html*/
+
+#video video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;    
+  }
+
+
+
 /* kontakt.html */
 
 #h1-tekst {
-    font-size: 15rem; /* Juster størrelsen som ønsket */
-    color: #1a3b55; /* Juster farven som ønsket */
+    font-size: 15rem; 
+    color: #1a3b55; 
     text-align: center;
     font-family: 'librebaskerville', serif;
     font-weight: 400;
@@ -14,7 +25,7 @@
     
 
 
-#kontakt-menu-container { 
+#kontakt-menu-container { /*selve containeren*/
     width: 100%;
     display: flex; 
     justify-content: center;
@@ -25,7 +36,7 @@
 
 
 #kontakt-menu-item,
-#kontakt-menu-item1 { /*selve containeren*/
+#kontakt-menu-item1 { 
   display: flex;
   gap: 25rem;
   justify-content: center;
@@ -67,14 +78,14 @@
 
 
 .kontakt-menu-knap { 
-    background-color: #BC5732;  /* varm rødbrun farve */
+    background-color: #BC5732;  
     color: #ffffff;
     border: 1px solid black; /* sort kant */
     border-radius: 8px;         /* afrundede hjørner */
     padding: 12px 28px;         /* størrelse på knappen */
     font-size: 20px;
     cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* lille skygge */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
     transition: background-color 0.2s ease;
     display: flex;
     justify-content: center;
@@ -88,9 +99,9 @@
 }
 
 .kontakt-menu-knap:hover { 
-    background-color: #A94B2A; /* mørkere rødbrun farve ved hover */
+    background-color: #A94B2A; 
     color: #ffffff;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* dybere skygge ved hover */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
 .tilbage-pil {
@@ -142,7 +153,7 @@
   }
   
   .vinkort-container {
-    margin-top: 10%; /* eller 60px eller mere – prøv dig frem */
+    margin-top: 10%; 
   }
   
 
@@ -207,12 +218,14 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: background-color 0.2s ease;
     font-weight: 300;
+    text-decoration: none;
+    font-family: 'opensans-normal', sans-serif;
   }
 
     .druesorter-knap:hover { 
-        background-color: #A94B2A; /* mørkere rødbrun farve ved hover */
+        background-color: #A94B2A; 
         color: #ffffff;
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* dybere skygge ved hover */
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
     }
   
 
@@ -221,7 +234,7 @@
 
 .smagsprofil-container {
     position: relative;
-    width: 100%; /* Eller 100% */
+    width: 100%; 
   }
   
   #mango-profil {
@@ -238,11 +251,11 @@
   
   .tekst-overlay {
     position: absolute;
-    top: 4rem; /* Justér efter hvor du vil have det */
-    left: 60%; /* Justér efter din layout */
+    top: 4rem; 
+    left: 60%; 
     transform: translateX(-50%);
     max-width: 600px;
-    color: #000000; /* Eller hvid, alt efter hvad der fungerer bedst */
+    color: #000000; 
     font-family: 'opensans-normal', sans-serif;
     font-weight: 100;
     text-align: flex;
@@ -267,7 +280,7 @@
     color: black;
   }
   
-  /* Justér placering præcist */
+ 
   .mango-smag  { 
     top: 13rem; 
     right: 27rem; 
@@ -367,11 +380,11 @@
 
   .tekst-overlay1 {
     position: absolute;
-    top: 2rem; /* Justér efter hvor du vil have det */
-    left: 60%; /* Justér efter din layout */
+    top: 2rem; 
+    left: 60%; 
     transform: translateX(-50%);
     max-width: 600px;
-    color: #000000; /* Eller hvid, alt efter hvad der fungerer bedst */
+    color: #000000; 
     font-family: 'opensans-normal', sans-serif;
     font-weight: 100;
     text-align: flex;
@@ -703,7 +716,7 @@
   
   .historie-image img {
     width: 100%;
-    border-radius: 1rem;    /* samme bløde hjørner som andre billeder */
+    border-radius: 1rem;    
     object-fit: cover;
     display: block;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -826,63 +839,76 @@
   
  /* anmeldelser.html */ 
 
-/* Wrapper, så der kan placeres ting over billedet */
-.kommentar-container {
-    position: relative;
-    width: 350px;    /* bredde */
-    height: 220px;   /* højde */
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Selve billedet (taleboblen) */
-  .kommentar-img {
+#anmeldelser-container { 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    height: 100%;
-    display: block;
-  }
-  
-  /* Teksten ovenpå: */
-  .kommentar-tekst {
-    position: absolute;
-    top: 3rem;      /* afstand fra toppen af boksen */
-    left: 1rem;     /* afstand fra venstre kant */
-    right: 1rem;    /* så den kan brydes i højre side */
-    bottom: 0rem;   /* undgå at løbe ud under halen */
-    overflow: auto; /* rullefelt hvis teksten bliver for lang */
-    font-size: 0.95rem;
-    line-height: 1.4;
-    color: #333;
-  }
-  
-  /* info-række med avatar + navn */
-  .kommentar-info {
-    display: flex;
+    gap: 2rem; 
+    margin: 4rem 0;
+    
+}
+
+.anmeldelse { 
+    display: flex; 
+    flex-direction: column;
+    background-color: #DFCB96; 
+    flex: 0 0 30%;
+    position: relative;
+    width: 30%;         
+    min-width: 300px;   
+    height: 280px;      
+    padding: 1.5rem;    
+    background-color: #dfcb96;
+    border-radius: 1.5rem 1.5rem 1.5rem 0; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+} 
+
+.anmelder { 
+    display: flex; 
+    flex-direction: row;
+    gap: 1rem;                
     align-items: center;
-    gap: 1rem;
-    margin-top: -2rem;
-  }
-  
-  /* Den runde avatar */
-  .kommentar-avatar {
+    justify-content: space-between;
+    margin-top: auto;   
+    position: absolute;
+    bottom: 1.5rem;         
+    left: 1.5rem;
+    right: 1.5rem;
+    
+}
+
+.anmeldelse-p { 
+    font-family: 'opensans-normal', sans-serif;
+    font-weight: 100;
+    color: #000000; 
+    
+    font-size: 1.2rem;
+    line-height: 1.5; 
+
+    margin: 0;
+}
+
+.h3-navn { 
+    font-family: 'opensans-bold', sans-serif;
+    font-weight: 100;
+    color: #000000; 
+    font-size: 1.5rem;
+    margin: 0;
+
+}
+
+.anmelder-billede {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #f9f2e9;
-    margin-bottom: 5rem;
-  }
-  
-  /* Navnet */
-  .kommentar-forfatter {
-    font: 700 1rem serif;
-    text-transform: uppercase;
-    color: #1f3b4d;
-  }
-  
-  .kommentar-kort {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* <— her centrerer vi avatar+navn */
-    gap: 0.5rem;           /* luft mellem boble og meta */
-  }
-  
+    border-radius: 50%; 
+    margin-bottom: 1rem;
+
+}
+
+
+
