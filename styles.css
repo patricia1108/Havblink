@@ -9,30 +9,35 @@ body {
 }
 
 
-@font-face {
-    font-family: 'librebaskerville';
-    src: url(fonts/LibreBaskerville-Regular.ttf) format('truetype');
-}
+
 
 @font-face {
     font-family: 'opensans-normal';
     src: url(fonts/OpenSans-Regular.ttf) format('truetype');
+
 }
 
 @font-face {
     font-family: 'opensans-light';
     src: url(fonts/OpenSans-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('fonts/LibreBaskerville-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 
-
+}
 
 
 /* Mobil størrelse */
 @media screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+ 
     
   
 

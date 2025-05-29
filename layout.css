@@ -7,8 +7,31 @@
     display: block;    
   }
 
+#video img { 
+    display: none;
+}
 
 
+#menuer {
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    padding-left: 2%;
+    position: absolute;
+    width: 100%;
+
+}  
+
+#menuer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    line-height: 5rem;
+    border-bottom: 1px solid #ffffff;
+    width: 35%;
+    height: 60px;
+} 
 /* kontakt.html */
 
 #h1-tekst {
@@ -29,7 +52,6 @@
     width: 100%;
     display: flex; 
     justify-content: center;
-    align-items: center; 
     flex-direction: column;
     margin-top: 10rem;
 }
@@ -38,9 +60,11 @@
 #kontakt-menu-item,
 #kontakt-menu-item1 { 
   display: flex;
-  gap: 25rem;
+  gap: 10rem;
   justify-content: center;
   margin-bottom: 70px;
+  padding-left: 22rem;
+  padding-right: 22rem;
   
 }
 
@@ -197,7 +221,7 @@
     gap: 20px; /* luft mellem tekst og knap */
     margin-right: 6.5%; /* justér mod højre */
     margin-top: 1px; /* op/ned */
-    margin-bottom: 60px;
+    margin-bottom: 35rem;
   }
   
   .druetekst {
@@ -247,6 +271,11 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 1rem;
+  }
+
+  #mango-mobil-smagsprofil {
+    display: none; /* skjul på desktop */
   }
   
   .tekst-overlay {
@@ -344,12 +373,15 @@
     margin-top: 1rem;
     font-size: 1.5rem;
     color: #1f3b4d;
+    top: 5rem;
+    margin-bottom: 10rem;
   }
   
   .mad-anbefaling p {
     margin: 0;
     font-family: 'opensans-normal', sans-serif;
     font-weight: 100;
+    margin-bottom: 30rem;
     
     
   }
@@ -367,6 +399,7 @@
     font-weight: 300;
     font-family: 'opensans-normal', sans-serif;
     text-decoration: none;
+    margin-bottom: 28rem;
   }
   
   .mad-knap:hover {
@@ -401,6 +434,21 @@
     margin-top: 2rem;
     
   }
+
+#mango-profil-anbefaling { 
+    width: 80%;
+    display: flex;
+    margin-top: 10%;
+    margin-left: 9rem;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20rem;
+}
+
+#mad-anbefaling-billede { 
+    display: none;
+}
 
   .salater  { 
     top: 13rem; 
@@ -494,6 +542,7 @@
     padding: 4rem;
     border-radius: 10px;
     gap: 1rem;
+    margin-bottom: 20rem;
   }
   
   .drue-box {
@@ -692,7 +741,11 @@
     margin-bottom: 1rem;
   }
   
+
+
+
   #om-os-billede { 
+    display: block;
     width: 95%;
     height: auto;
     border-radius: 10px;
@@ -702,6 +755,11 @@
     margin-left: 2.5rem;
 }
 
+#om-os-mobil-billede { 
+   display: none;
+}
+
+
 /* Selve “grid”-sektionen */
 .historie-section {
     display: grid;
@@ -709,7 +767,8 @@
     gap: 4rem;                     
     align-items: start;             
     margin-top: 15rem;              
-    padding: 0 2rem;               
+    padding: 0 2rem;   
+    margin-bottom: 15rem;            
   }
 
   
@@ -766,6 +825,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    margin-bottom: 20rem;
   }
   
   /* Alle kort har afrundede hjørner og skjuler overflow */
@@ -799,6 +859,13 @@
     aspect-ratio: 3 / 4;
   }
   
+ /* .card--narrow1 {
+    aspect-ratio: 3 / 4;
+  }/*
+
+
+
+
   /* Billede fylder altid hele kortet */
   .card img {
     width: 100%;
@@ -808,6 +875,20 @@
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 
   }
+
+
+
+
+
+
+  #card--narrow img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+  }
+
+
   
   /* Overlay-teksten centreret ovenpå */
   .card__overlay {
@@ -847,6 +928,7 @@
     width: 100%;
     gap: 2rem; 
     margin: 4rem 0;
+    margin-bottom: 20rem;
     
 }
 
@@ -911,4 +993,387 @@
 }
 
 
+
+/* mobil størrelse */
+@media screen and (max-width: 600px) {
+ 
+#video video {
+    display: none;  
+  }
+#video img { 
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+#menuer {
+    padding-left: 6%;
+}
+   
+#menuer a { 
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#h1-tekst {
+    font-size: 5rem; 
+    margin-top: 20rem;
+    margin-bottom: 2rem;
+
+}
+
+
+
+#kontakt-menu-item,
+#kontakt-menu-item1 { 
+    flex-direction: column;
+    padding-left: 1rem; /* padding er invendig og margin er udevendig */
+    padding-right: 2rem;
+    width: 80%;
+    font-size: 16px;
+    gap: 3rem;
+
+}
+
+
+#kontakt-menu-item2 textarea { 
+    width: 65%;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: left;
+    padding: 0;
+    margin-right: 10rem;
+    margin-left: 1rem;
+    
+
+}
+
+.kontakt-menu-knap { 
+    width: 40%;
+    margin-top: 5rem;
+    margin-left: 9rem;
+   
+
+} 
+
+#h2-overskrift { 
+    font-size: 3rem;
+    margin-top: 20rem;
+    margin-bottom: 2rem;
+
+} 
+
+.vinkort-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem; 
+    width: 70%;
+    margin-left: 15%;
+}
+
+.vin-kort {
+    width: 100%;
+    max-width: 300px; /* Maksimal bredde for kortet */
+    margin-bottom: 2rem; /* Luft mellem kortene */
+
+}
+
+.druetekst-og-knap { 
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0; 
+    margin-top: 2rem; 
+    color: #1a3b55;
+}
+
+.smagsprofil-container {
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+
+}
+
+
+
+.tekst-overlay {
+   margin: 0;
+   width: 100%; 
+   transform: none;
+   left:0;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   padding-left: 4rem;
+   padding-right: 4rem;
+   text-align: center;
+   
+   
+  }
+
+.tekst-overlay p { 
+    font-size: 1.2rem;
+    font-family: 'opensans-normal', sans-serif;
+
+
+}
+
+#mango-h1 { 
+    font-family: 'librebaskerville', serif;
+    font-weight: 100;
+    margin-left: 0rem;
+    font-size: 40px;
+    text-align: center;
+    
+  }
+
+
+#mango-mobil-smagsprofil {
+    display: block; /* skjul på desktop */
+    width: 100%;
+  }
+
+
+
+
+#mango-profil { 
+    display: none;
+  }
+
+a.mad-knap  { 
+    width: 40%;
+    margin-bottom: 7rem;
+ 
+}
+
+.mad-anbefaling {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    top: 0; 
+    bottom: 0;
+    margin-bottom: 0;
+    gap: 1.5rem;
+    margin-top: 1rem;
+
+
+}
+
+.mad-anbefaling p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    margin: 0;
+}
+
+
+.billede-wrapper { 
+    display: none;
+
+}
+
+#mango-anb-h1 { 
+    font-family: 'librebaskerville', serif;
+    font-weight: 100;
+    margin-left: 0rem;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+
+
+.tekst-overlay1 { 
+   margin: 0;
+   width: 100%; 
+   transform: none;
+   left:0;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   padding-left: 4rem;
+   padding-right: 4rem;
+   text-align: center;
+}
+
+
+
+
+#mad-anbefaling-mobil { 
+    display: flex; 
+    width: 100%;
+    
+
+}
+
+#mad-anbefaling-billede { 
+    margin-bottom: 10rem;
+    display: block;
+}
+
+#mango-profil-anbefaling { 
+    display: none;
+}
+
+
+#druesorter-h2 { 
+    font-size: 3rem;
+    margin-top: 20rem;
+    margin-bottom: 2rem;
+}
+
+.intro-text { 
+    text-align: center;
+}
+
+.druer-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin-bottom: 7rem;
+}
+
+#oplev-h3 { 
+    font-size: 3rem;
+    margin-top: 20rem;
+    margin-bottom: 2rem;
+}
+
+.cards-wrapper { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin-bottom: 7rem;
+}
+
+#om-os-h3 { 
+    font-size: 3rem;
+    margin-top: 20rem;
+    margin-bottom: 2rem;
+
+} 
+
+.anmelder-billede { 
+    width: 45px;
+    height: 45px;
+}
+
+.anmeldelse { 
+   padding:1rem
+}
+
+.anmeldelse-p { 
+    font-size: 17px;
+}
+
+#anmeldelser-container { 
+   margin-bottom: 11rem;
+
+} 
+
+
+#om-os-mobil-billede { 
+    display: block;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    margin-left: 3rem; 
+}
+
+#om-os-billede { 
+    display: none;
+}
+
+.page-wrapper { 
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* mindre afstand mellem sektioner */
+    padding: 1rem; /* mindre padding */
+}
+
+
+.team-section { 
+    flex-direction: column;
+}
+
+.team-section h2 { 
+    font-size: 2.5rem; /* mindre overskrift */
+    margin-bottom: 1rem; /* mindre afstand under overskriften */
+    text-align: center; /* centrerer overskriften */
+}
+
+.team-grid { 
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* mindre afstand mellem team-medlemmer */
+    align-items: center; /* centrerer team-medlemmer */
+    margin-left: 7rem;
+}
+
+.team-kort p { 
+    font-size: 1.2rem; /* mindre tekststørrelse */
+    line-height: 1.9rem; /* mindre linjeafstand */
+    padding-right: 8rem;
+    
+   
+}
+
+.om-section { 
+    border-left: none; /* fjern lodret separator */
+    padding-left: 0; /* fjern padding */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* mindre afstand mellem kasser */
+    margin-top: 2rem; /* mindre afstand til toppen */
+    
+}
+
+.om-section p { 
+    font-size: 1.2rem; /* mindre tekststørrelse */
+    line-height: 1.9rem; /* mindre linjeafstand */
+    
+}
+
+.historie-section { 
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* mindre afstand mellem billede og tekst */
+    align-items: center; /* centrerer indholdet */
+    margin-top: 2rem; /* mindre afstand til toppen */
+
+} 
+
+.billede-section-h2 { 
+    font-size: 2.5rem; /* mindre overskrift */
+    color: #1f3b4d; /* ændret farve */
+    font-family: 'librebaskerville', serif;
+    font-weight: 100;
+    margin-bottom: 1rem; /* mindre afstand under overskriften */
+    text-align: center; /* centrerer overskriften */
+}
+
+
+.historie-text p { 
+    text-align: left; /* centrerer teksten */
+    padding: 0 1rem; /* mindre padding */
+    line-height: 1.9rem; /* mindre linjeafstand */
+    font-size: 16px;
+    margin-bottom: 3rem; 
+    
+
+}
+
+
+
+
+}
 

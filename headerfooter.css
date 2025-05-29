@@ -45,26 +45,6 @@ header img {
     font-style: normal;
 }
 
-#menuer {
-    display: flex;
-    flex-direction: column;
-    top: 20%;
-    margin-left: 2%;
-    position: absolute;
-    width: 100%;
-
-}  
-
-#menuer a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    line-height: 5rem;
-    border-bottom: 1px solid #ffffff;
-    width: 35%;
-    height: 60px;
-} 
 
 
 footer {
@@ -79,16 +59,13 @@ footer {
 #footerimg { 
     width: 100%;
     position: absolute;
-    bottom: 1rem; /*bottom rykker placering af footer billedet*/
-    
+    bottom: 7rem; /*bottom rykker placering af footer billedet*/
+    top: -10rem;
 }
 
-#footer-img {
-    width: 100%;
-    position: absolute;
-    bottom: 1rem; /*bottom rykker placering af footer billedet*/
-    top: 12rem;
-}
+
+
+
 
 #footer-text {
     width: 100%;
@@ -98,22 +75,12 @@ footer {
     color: #1a3b55;
     height: 100%; /*Højden på footer-text er 100% af footer*/
     padding: 4rem;
-    margin-top: 15rem;
+    margin-top: 20rem;
     margin-bottom: 2rem;
 }
 
-#footer-text1 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: #1a3b55;
-    height: 100%; /*Højden på footer-text er 100% af footer*/
-    padding: 4rem;
-    margin-top: 41rem;
-    margin-bottom: 2rem;
-    line-height: 2rem;
-}
+
+
 
 #footer-text section {
     display: flex;
@@ -156,3 +123,87 @@ footer {
     cursor: pointer;
   }
   
+  /* mobil størrelse */
+@media screen and (max-width: 600px) {
+ #header-text h1 {
+    font-size: 1rem;
+    margin-left: 20px;
+
+
+ }
+
+ .header-link { 
+    font-size: 0.8rem;
+    
+ }
+
+ .header-link:hover {
+    opacity: 1;
+    
+  }
+
+#header-text h3 {
+    margin-right: 20px;
+    margin-top: 0rem;
+    }
+
+
+header img { 
+    top: 80%;
+}
+
+#footer-text { 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    
+}
+
+#footer-text1 { 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    gap: 2rem;
+
+}
+
+
+
+footer { 
+    height: 6rem;
+}
+
+#footerimg { 
+    width: 100%;
+    position: absolute;
+    bottom: 10rem; /*bottom rykker placering af footer billedet*/
+    top: -3rem;
+    
+}
+
+
+
+#footer-kontakt {
+    text-align: center;
+    align-items: center;
+    padding-top: 3rem;
+    
+}
+
+#footer-text section {
+    align-items: center;
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-bottom: 5rem;
+    
+ 
+
+}
+
+
+}
